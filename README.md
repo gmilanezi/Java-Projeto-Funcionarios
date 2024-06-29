@@ -1,6 +1,8 @@
 # Java-Projeto-Funcionarios
 Projeto desenvolvido em Java 11, SpringBoot v3.3.1, SOLID, JUnit 5, Postgress
 
+Scripts de banco e testes com Postman na pasta /resources
+
 # Entidade
 ID do funcionário, Nome do funcionário, Designação do funcionário, Salário do funcionário, Número de telefone do funcionário, Endereço do funcionário
 
