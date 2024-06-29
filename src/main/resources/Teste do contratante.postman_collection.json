@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "05bbf39e-0353-41cf-9b49-313786ab0737",
+		"name": "Teste do contratante",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6557978"
+	},
+	"item": [
+		{
+			"name": "Lista Funcionário",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/funcionario/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"funcionario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/funcionario/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"funcionario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 15,\r\n    \"nm_funcionario\": \"Eliana\",\r\n    \"ds_funcionario\": \"TI\",\r\n    \"sl_funcionario\": 10000.0,\r\n    \"fn_funcionario\": \"(11)9 6453 8708\",\r\n    \"en_funcionario\": \"Rua x, y\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nm_funcionario\": \"Gustavo Henrique Milanezi\",\r\n    \"ds_funcionario\": \"TI\",\r\n    \"sl_funcionario\": 10000.0,\r\n    \"fn_funcionario\": \"(11)9 6453 8708\",\r\n    \"en_funcionario\": \"Rua x, y\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/funcionario/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"funcionario",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
